@@ -1,0 +1,38 @@
+.page {
+  margin-top: 5vh;
+  margin-left: 50vh;
+  width: 50vw;
+  border: 1px solid black;
+  min-height: 80vh;
+}
+.page > * {
+  display: grid;
+}
+
+input {
+  font-size: 125%;
+}
+#hotel_data_push > *:not(h3) {
+  /*display: inline-block;*/
+}
+#hotel_data_push > div {
+  border: blue solid 1px;
+  margin-bottom: 2vh;
+}
+.room_str > * {
+  display: inline-block;
+  width: 25vw;
+  margin-left: 10vw;
+  margin-bottom: 1vh;
+}
+table {
+  width: 50vw;
+}
+td {
+  border: 1px dashed red;
+  height: 5vh;
+}
+
+tr :nth-child(1) {
+  text-align: center;
+}

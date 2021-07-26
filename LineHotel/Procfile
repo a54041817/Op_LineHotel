@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+web: gunicorn main:app –preload
+=======
+web: gunicorn main:app –preload
+>>>>>>> 9873755b2d989c80e97e294baad266df96845589
+=======
+web: gunicorn main:app –preload
+>>>>>>> 9873755b2d989c80e97e294baad266df96845589
