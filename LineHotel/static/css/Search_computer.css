@@ -1,0 +1,47 @@
+@media screen and (min-width: 800px) {
+  .search_all {
+    margin-left: 25vw;
+    max-width: 100vw;
+  }
+  .search_all > * {
+    display: inline-block;
+    margin-left: 0;
+  }
+  .all_title {
+    margin-left: 10vw;
+  }
+  #Search_ret > * {
+    display: inline-block;
+  }
+
+  #user_rook {
+    display: table;
+    margin-left: 0%;
+  }
+  #ui_button {
+    display: table;
+    width: 100vw;
+  }
+  #ui_button > * {
+    display: table-cell;
+    width: 50vw;
+    background-color: white;
+    font-size: 200%;
+  }
+  #user_rook > * {
+    border: solid black 1px;
+    display: table-cell;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    width: 33.33%;
+  }
+
+  #user_rook > div > a > h3 {
+    margin-left: 35%;
+  }
+  #user_rook > div > a > img {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
