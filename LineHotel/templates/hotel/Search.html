@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head><title>依LINE住宿-搜尋結果</title></head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Search_phom.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Search_computer.css') }}">
+    <script src="{{ url_for('static', filename='./scrpit/jquery-3.6.0.js') }}"></script>
+    <script src="{{ url_for('static', filename='./scrpit/Search.js') }}"></script>
+    <script src="{{ url_for('static', filename='./scrpit/Search_pag.js') }}"></script>
+    <script src="{{ url_for('static', filename='./scrpit/retdata.js') }}"></script>
+    <script src="{{ url_for('static', filename='./scrpit/str_data.js') }}"></script>
+    <script>
+        var poin="{{data[0]}}";
+        var data_s="{{data[1]}}";
+        var data_d="{{data[2]}}";
+        var man_Len="{{data[3]}}";
+    </script>
+<body>
+    <h3 id="jdata" style="display: none;">{{data[4]}}</h3>
+    <div class="search_all">
+        <div class="search_all all_title">
+        <h3>請輸入旅遊地點：</h3>
+        <input type="text" id="hotel_pixel">
+        </div>
+        <br>
+        <h3>入住日期:</h3>
+        <input type="date" id="date_s">
+        <h3>退房日期:</h3>
+        <input type="date" id="date_d"value="1">
+        <h3">入住人數:</h3>
+        <input type="number" id="man_Len" style="width: 5vw; min-width: 5vw;" min="1" max="8" value="{{data[3]}}">
+        <h3">人</h3>
+        <button  id="gogo">搜尋</button>
+    </div><!--搜尋條件-->
+
+
+    <div><!--搜尋結果-->
+        <h1 id=_Search_point>{{data[0]}}</h1>
+        <div id="Search_ret"><h2>搜尋結果</h2><h2 id=_Serch_len>0</h2><h2>個</h2></div>
+        <div id="ui_button"><button><</button><button>></button></div>
+        
+        <div id="user_rook">
+
+            <div><a id="link1"><img id="img1"><h3 id="t1"></h3></a> </div>
+            <div><a id="link2"><img id="img2"><h3 id="t2"></h3></a></div>
+            <div><a id="link3"><img id="img3"><h3 id="t3"></h3></a></div>
+
+        </div>
+    </div>
+
+
+    <div></div>
+
+</body>
+</html>

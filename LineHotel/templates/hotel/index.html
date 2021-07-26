@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index_computer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index_phom.css') }}">
+    <script src="{{ url_for('static', filename='scrpit/jquery-3.6.0.js') }}"></script>
+    <script src="{{ url_for('static', filename='scrpit/Search.js') }}"></script>
+    <script src="{{ url_for('static', filename='scrpit/index.js') }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var poin="{{data[0]}}";
+        var data_s="{{data[1]}}";
+        var data_d="{{data[2]}}";
+        var man_Len="{{data[3]}}";
+    </script>
+</head>
+
+<body>
+    <div class="tab_top"><!--https://liff.line.me/1654463147-DN3l43MN-->
+        <a id="Boss_pag" href="/hotelBoss/index.html">我是業者</a></div>
+    <div id="user_List">
+        <a href="/login.html"><img src="{{ url_for('static', filename='img/user.png') }}" width="100%"></a> 
+        <a href="/login.html"><img src="{{ url_for('static', filename='img/checklist.png') }}" width="100%"></a> 
+    </div>
+    
+    <div class="top">
+        
+       <!-- <img src="./img/bed.png" class="Logo" >-->
+       <!---->
+        <h3>請輸入旅遊地點：</h3> 
+        <input type="text" id="hotel_pixel">
+        <button  id="gogo">搜尋</button>
+
+    <div class="top-date">
+        <h3 style="color: white;" >入住日期:</h3>
+        <input type="date" id="date_s">
+        <h3 style="color: white;">退房日期:</h3>
+        <input type="date" id="date_d">
+        <h3 style="color: white;">入住人數:</h3>
+        <input type="number" id="man_Len" style="width: 5vw; min-width: 5vw;" min="1" max="8" value="1">
+        <h3 style="color: white;">人</h3>
+    </div>
+    </div>
+    <div class="mid">
+        
+        <div><H3>版面:mid{1}</H3></div>
+        <div><H3>版面:mid{2}</H3></div>
+        <div><H3>版面:mid{3}</H3></div>
+    </div>
+    <div class="dm">
+        <H3 style="color:white;">版面:dm{版權宣告}</H3>
+    </div>
+</body>
+</html>
